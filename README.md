@@ -1,6 +1,6 @@
-# spark-function-template
+# flink-function-template
 
-> spark自定义函数模版
+> flink自定义函数模版
 
 ### 产品介绍
 
