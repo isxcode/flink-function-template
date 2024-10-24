@@ -20,6 +20,8 @@ cp ./build/libs/flink-custom-func.jar ~/Downloads
 
 - 名称：to_chinese_date
 - 类名：com.isxcode.acorn.udf.Func
+- 输入类型：Timestamp
+- 返回类型：String
 - 备注：将时间格式转成中文
 - 测试sql：
 
