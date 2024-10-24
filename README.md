@@ -19,7 +19,7 @@ cp ./build/libs/flink-custom-func.jar ~/Downloads
 ### 新建函数
 
 - 名称：to_chinese_date
-- 类名：com.isxcode.star.udf.Func
+- 类名：com.isxcode.acorn.udf.Func
 - 备注：将时间格式转成中文
 - 测试sql：
 
