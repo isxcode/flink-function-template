@@ -28,10 +28,9 @@ CREATE TABLE print_sink
 (
     print_value string
 ) WITH (
-      'connector' = 'print'
-      );
-INSERT INTO print_sink
-SELECT to_chinese_date(now());
+    'connector' = 'print'
+);
+INSERT INTO print_sink SELECT to_chinese_date(now());
 ```
 
 #### 函数列表
