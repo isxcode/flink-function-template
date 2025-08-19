@@ -17,7 +17,7 @@ cp ./build/libs/flink-custom-func.jar ~/Downloads
 
 ### 新建函数
 
-- 名称：to_chinese_date
+- 名称：flink_to_chinese_date
 - 类名：com.isxcode.acorn.udf.Func
 - 输入类型：Timestamp
 - 返回类型：String
@@ -31,7 +31,7 @@ CREATE TABLE print_sink
 ) WITH (
     'connector' = 'print'
 );
-INSERT INTO print_sink SELECT to_chinese_date(now());
+INSERT INTO print_sink SELECT flink_to_chinese_date(now());
 ```
 
 #### 函数列表
