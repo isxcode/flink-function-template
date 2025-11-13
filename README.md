@@ -15,6 +15,8 @@ cd flink-function-template
 cp ./build/libs/flink-custom-func.jar ~/Downloads
 ```
 
+- [体验flink-custom-func.jar下载](https://zhiqingyun-demo.isxcode.com/tools/open/file/flink-custom-func.jar)
+
 ### 新建函数
 
 - 名称：flink_to_chinese_date
@@ -31,6 +33,8 @@ CREATE TABLE print_sink
 ) WITH (
     'connector' = 'print'
 );
+
+
 INSERT INTO print_sink SELECT flink_to_chinese_date(now());
 ```
 
